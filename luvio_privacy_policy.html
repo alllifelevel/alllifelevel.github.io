@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Luvio Vault</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            zinc: {
+              850: '#1f1f22',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #09090b; }
+    ::selection { background-color: rgba(16, 185, 129, 0.3); color: #fff; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #52525b; }
+  </style>
+</head>
+<body class="text-zinc-400 antialiased leading-relaxed min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="border-b border-zinc-800/80 bg-[#09090b]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="p-1.5 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-inner">
+          <i data-lucide="box" class="w-5 h-5 text-blue-500"></i>
+        </div>
+        <div>
+          <h1 class="text-sm font-semibold text-zinc-100 tracking-wide">Luvio Vault</h1>
+          <p class="text-[10px] text-zinc-500 font-medium tracking-widest uppercase">By ALLStudio</p>
+        </div>
+      </div>
+      <a href="https://allstudio.app" target="_blank" class="text-xs font-medium text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to ALLStudio
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative pt-20 pb-12 overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-64 bg-blue-500/20 blur-[100px] rounded-full pointer-events-none"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-6 shadow-sm">
+        <i data-lucide="shield-check" class="w-4 h-4"></i> 100% Offline & Local
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-zinc-100 mb-6 tracking-tight">Privacy Policy</h2>
+      <p class="text-lg text-zinc-400 max-w-2xl mx-auto">Your conversations are yours. Luvio Vault is built on a strict zero-telemetry architecture. We don't want your data, and we don't collect it.</p>
+      <p class="text-xs text-zinc-500 mt-6 font-mono">Last Updated: <span class="text-zinc-400">June 2026</span></p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-3xl mx-auto px-6 pb-24 w-full">
+    
+    <div class="space-y-10">
+      
+      <!-- Section 1 -->
+      <section class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-sm">
+        <h3 class="text-lg font-semibold text-zinc-100 flex items-center gap-2.5 mb-4">
+          <i data-lucide="hard-drive" class="w-5 h-5 text-blue-400"></i> Where Your Data Lives
+        </h3>
+        <p class="mb-4">Luvio Vault operates exclusively within your local Chrome browser environment. <strong>We do not own, operate, or rent any external databases.</strong> When you save a chat, modify settings, or set a PIN, that data is written directly to your hard drive using the Chrome local storage API.</p>
+        <p>Because there is no external server, if you uninstall the extension or wipe your browser data without making a backup, your data is permanently deleted. We cannot recover it for you.</p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-sm">
+        <h3 class="text-lg font-semibold text-zinc-100 flex items-center gap-2.5 mb-4">
+          <i data-lucide="file-search" class="w-5 h-5 text-amber-400"></i> What Data the Extension Processes
+        </h3>
+        <p class="mb-4">To function as an automated chat logger, Luvio Vault must access specific information strictly on your local machine. Under the Chrome Web Store guidelines, this is classified as "data handling", even though it never leaves your computer.</p>
+        
+        <ul class="space-y-4 mt-6">
+          <li class="flex gap-4">
+            <div class="mt-0.5"><i data-lucide="message-square-text" class="w-5 h-5 text-zinc-500"></i></div>
+            <div>
+              <strong class="text-zinc-200 block mb-1">Website Content & Personal Communications</strong>
+              <p class="text-sm">The extension reads the HTML structure of the active tab on <code>chatgpt.com</code> and <code>gemini.google.com</code> to convert your conversation into clean Markdown. It saves this locally to your vault.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="mt-0.5"><i data-lucide="key-round" class="w-5 h-5 text-zinc-500"></i></div>
+            <div>
+              <strong class="text-zinc-200 block mb-1">Authentication Information (PIN Lock)</strong>
+              <p class="text-sm">If you enable the PIN lock, we process the 4 digits you type. We immediately convert this into a secure cryptographic hash (SHA-256). We only store the hash, meaning your actual PIN is never saved in plaintext.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-sm">
+        <h3 class="text-lg font-semibold text-zinc-100 flex items-center gap-2.5 mb-4">
+          <i data-lucide="unlock" class="w-5 h-5 text-emerald-400"></i> Chrome Permissions Explained
+        </h3>
+        <p class="mb-4">Upon installation, Chrome will ask you to grant specific permissions. Here is exactly why we need them:</p>
+        <ul class="list-disc list-outside ml-5 space-y-2 text-sm text-zinc-400 marker:text-zinc-600">
+          <li><strong class="text-zinc-200">Storage & Unlimited Storage:</strong> Required to save your chat logs locally. Since text files can become large over time, unlimited storage prevents Chrome from deleting your logs when the standard 5MB quota is reached.</li>
+          <li><strong class="text-zinc-200">Host Permissions (*://chatgpt.com/*, *://gemini.google.com/*):</strong> Required so our content script can "wake up" only when you are actively on these AI websites to auto-record your conversations. We do not have access to any other websites you visit.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-sm">
+        <h3 class="text-lg font-semibold text-zinc-100 flex items-center gap-2.5 mb-4">
+          <i data-lucide="eye-off" class="w-5 h-5 text-rose-400"></i> Third-Party Analytics & Tracking
+        </h3>
+        <p>There are none. We do not use Google Analytics, Mixpanel, Sentry, or any other third-party tracking scripts. We don't know how many chats you have saved, how often you open the dashboard, or what your font size settings are.</p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-sm">
+        <h3 class="text-lg font-semibold text-zinc-100 flex items-center gap-2.5 mb-4">
+          <i data-lucide="trash-2" class="w-5 h-5 text-purple-400"></i> Managing Your Data
+        </h3>
+        <p class="mb-3">Because you are the sole custodian of your data, you have total control over its lifecycle:</p>
+        <ul class="list-disc list-outside ml-5 space-y-2 text-sm text-zinc-400 marker:text-zinc-600">
+          <li>You can delete individual chats directly inside the Luvio Vault sidebar.</li>
+          <li>You can configure an <strong>Auto-Retention</strong> rule in Settings to automatically delete logs older than 1 week or 1 month.</li>
+          <li>You can trigger a <strong>Factory Reset</strong> from the recovery screen, which permanently obliterates all your local vault data and settings.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800/60 bg-zinc-950 py-8 text-center mt-auto">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col items-center justify-center gap-4">
+      <div class="p-1.5 bg-blue-500/10 rounded-lg border border-blue-500/20 inline-block mb-2 opacity-50">
+        <i data-lucide="box" class="w-4 h-4 text-blue-500"></i>
+      </div>
+      <p class="text-xs text-zinc-500 font-medium">Luvio Vault Pro is designed and developed by ALLStudio.</p>
+      <div class="flex gap-4 mt-2">
+        <a href="https://play.google.com/store/apps/details?id=app.allstudio.noky" target="_blank" class="text-xs text-zinc-400 hover:text-emerald-400 transition-colors">Noky Keyboard</a>
+        <span class="text-zinc-700">•</span>
+        <a href="https://allstudio.app" target="_blank" class="text-xs text-zinc-400 hover:text-blue-400 transition-colors">ALLStudio Hub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
